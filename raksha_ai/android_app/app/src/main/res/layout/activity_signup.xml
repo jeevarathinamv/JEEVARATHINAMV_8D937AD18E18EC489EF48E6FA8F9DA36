@@ -1,1 +1,79 @@
-<?xml version='1.0' encoding='utf-8'?><RelativeLayout xmlns:android='http://schemas.android.com/apk/res/android' android:layout_width='match_parent' android:layout_height='match_parent'><TextView android:layout_width='wrap_content' android:layout_height='wrap_content' android:layout_centerInParent='true' android:text='signup Screen' /></RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_background"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Create Account"
+        android:textColor="@color/primary_red"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fullNameField"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:background="@color/dark_surface"
+        android:hint="Full Name"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_medium_emphasis" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/fullNameField"
+        android:layout_marginTop="16dp"
+        android:background="@color/dark_surface"
+        android:hint="Email"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_medium_emphasis" />
+
+    <EditText
+        android:id="@+id/phoneField"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/emailField"
+        android:layout_marginTop="16dp"
+        android:background="@color/dark_surface"
+        android:hint="Phone Number"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_medium_emphasis" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/phoneField"
+        android:layout_marginTop="16dp"
+        android:background="@color/dark_surface"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_medium_emphasis" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/passwordField"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/primary_red"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+</RelativeLayout>

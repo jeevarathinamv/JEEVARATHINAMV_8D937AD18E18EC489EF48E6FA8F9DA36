@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RAKSHA AI</string>
+    <string name="sos_button_text">SOS</string>
+    <string name="sos_help_trigger">SOS Help</string>
+    <string name="login_title">Login</string>
+    <string name="signup_title">Sign Up</string>
+    <string name="home_title">Home</string>
+    <string name="settings_title">Settings</string>
+    <string name="contacts_title">Emergency Contacts</string>
+    <string name="history_title">Alert History</string>
+</resources>
