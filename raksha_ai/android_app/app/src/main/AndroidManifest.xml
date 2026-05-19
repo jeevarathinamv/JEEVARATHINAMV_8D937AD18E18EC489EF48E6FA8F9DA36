@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rakshaai">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RakshaAI">
+
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RakshaAI.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ui.LoginActivity" />
+        <activity android:name=".ui.SignupActivity" />
+        <activity android:name=".ui.HomeActivity" />
+        <activity android:name=".ui.SOSActivity" />
+        <activity android:name=".ui.ContactsActivity" />
+        <activity android:name=".ui.SettingsActivity" />
+        <activity android:name=".ui.AlertHistoryActivity" />
+        <activity android:name=".ui.TrackingActivity" />
+        <activity android:name=".ui.ProtectionModeActivity" />
+        <activity android:name=".ui.VoiceTriggerSetupActivity" />
+        <activity android:name=".ui.FakeCallActivity" />
+        <activity android:name=".ui.OtpVerificationActivity" />
+        <activity android:name=".ui.AdminMonitoringActivity" />
+
+        <service
+            android:name=".service.SOSForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location|microphone" />
+
+    </application>
+
+</manifest>
